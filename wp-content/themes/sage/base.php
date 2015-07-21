@@ -18,7 +18,7 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <img src="<?php echo get_template_directory_uri(); ?>/dist/screenshot.png" />
+    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/screenshot.png" />
     <div class="wrap container" role="document">
       <div class="content row">
         <main class="main" role="main">
