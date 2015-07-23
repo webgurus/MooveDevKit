@@ -95,7 +95,53 @@ To set up a new GitHub repository, you need to be added to the MooveAgency organ
 
 You need to create a Repository under the the MooveAgency Organisation page [https://github.com/MooveAgency](https://github.com/MooveAgency) by clicking the New Repository button.
 
+The Repository should be named after your project, e.g. "ukibc-theme". Once you've create the repository you will need to add the repository as the remote to your project. To achieve that you will have to do the following:
 
+1. Go to your WordPress folder running on Vagrant (where the wp-config.php resides for this project), in this case */moovevagrant/hgv_data/sites/ukibc/*.
+2. Initialise an empty Git repository in this folder.
+3. Add a remote repository to your local one.
+
+The commands for the above listed steps should be these:
+
+`git init`  
+
+then add your remote
+
+`git remote add origin https://github.com/MooveAgency/ukibc-theme.git`
+
+then you have to add all your files to create the initial commit like this:
+
+`git add .` 
+
+ where the dot actually adds all the files. You can check the status of the repository or what files should be added by issuing `git status`.
+
+Next you have to commit for the first time by adding a message to your commit:
+
+`git commit -m 'Initial commit'`
+
+and then you have to push your first commit:
+
+`git push origin master`
+
+After the push was successful you need to create the develop branch by issuing the following command:
+
+`git branch develop`
+
+then checkout the newly created branch to start working on it:
+
+`git checkout develop`
+
+After a couple of commits when you want to push to your remote repository, you will have to slightly change the previous push command to:
+
+`git push origin develop`
+
+
+####Commit
+
+There are a couple of guidelines on how and why to commit:
+1. You should commit every 30 minutes even if you haven't finished your feature.
+2. You should commit when you finished a feature
+3. When adding a commit message, you should be really descriptive but in the same time you have to be short.
 
 ###Development
 
