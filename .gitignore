@@ -21,7 +21,8 @@ wp-content/plugins/debug-objects/*
 wp-content/plugins/query-monitor/*
 wp-content/plugins/wordpress-importer/*
 wp-content/plugins/debug-queries/*
-
+wp-content/plugins/akismet/*
+wp-content/plugins/hello.php
 
 # wpengine specific
 .smushit-status
