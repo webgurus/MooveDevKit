@@ -16,7 +16,7 @@ In order to use MDK effectively, you'll need to have a few tools installed on yo
 4. **Highly recommended:** Install the [Vagrant Hostsupdater plugin](https://github.com/cogitatio/vagrant-hostsupdater)
  * Short version: `vagrant plugin install vagrant-hostsupdater`
 
-### Check yoru installations 
+### Check yoru installations
 
 Now, let’s go ahead and check out the tools we have installed. To start with Git, type `git --version` in the command line. For Vagrant, type `vagrant -v`, and then for VirtualBox, use command `vBoxManage -v`.
 
@@ -74,7 +74,7 @@ define('DB_PASSWORD', 'wordpress');
 * The default WordPress admin user is `wordpress` and the password is `wordpress`.
 
 ### 2. Accessing logs and debugging related tools ###
-Because Mercury has automatically set up the default domain hgv.dev, it installs every tool under this domain. 
+Because Mercury has automatically set up the default domain hgv.dev, it installs every tool under this domain.
 
 Please refer to the Getting Started section of the HGV install by accessing: [http://hgv.dev/#mercury-vagrant-hgv-admin-tools](http://hgv.dev/#mercury-vagrant-hgv-admin-tools) to read about debugging and admin tools.
 
@@ -103,7 +103,7 @@ The Repository should be named after your project, e.g. "ukibc-theme". Once you'
 
 The commands for the above listed steps should be these:
 
-`git init`  
+`git init`
 
 then add your remote
 
@@ -111,7 +111,7 @@ then add your remote
 
 then you have to add all your files to create the initial commit like this:
 
-`git add .` 
+`git add .`
 
  where the dot actually adds all the files. You can check the status of the repository or what files should be added by issuing `git status`.
 
@@ -149,6 +149,25 @@ Example commit messages would be something like this:
 
 `git commit -m 'Finished feature: Newsletter Widget'`
 
+####Cloning an already exisiting repository in your local environment
+
+There are two situations when you need to clone an exisiting repository to your local environment:
+1. When you start working on a project that is already under development.
+2. When you want to modify just a small thing and you don't need to pull the repo into an existing WordPress install.
+
+Go into your local development folder...if the folder is empty, you can use:
+
+`git clone git@github.com:whatever .`
+
+else
+
+```
+git init
+git remote add origin PATH/TO/REPO
+git fetch
+git checkout -t origin/develop
+```
+The above procedure should be used when you try to pull an already existing theme into your local Vagrant/Mercury setup. This means that the folder is not empty (it contains the WordPress install already).
 
 ###Development
 
@@ -160,7 +179,7 @@ bower install
 ```
 After everything was installed correctly, you can type `gulp` to build the assets for the first time. This is important, because if you don't build for the first time, you won't be able to see the CSS and JavaScript files when previewing your HTML files.
 
-After the assets were built, you can use `gulp watch` to watch for changes in the SASS and JS files and let gulp automatically re-build when you save your changes.  
+After the assets were built, you can use `gulp watch` to watch for changes in the SASS and JS files and let gulp automatically re-build when you save your changes.
 
 #### Directory Structure ###
 The structure related to the HTML development include the following directories:
@@ -177,7 +196,7 @@ When developing the HTML files your working directory should always be the  `htm
 <link href="../dist/styles/main.css" rel="stylesheet">
 <script src="../dist/scripts/modernizr.js"></script>
 ```
- 
+
 **Note:** *Please do not touch other files that are usually ending in **.php** and other folders like {lib|templates|inc}.*
 
 ## Theme Development
