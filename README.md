@@ -152,6 +152,7 @@ Example commit messages would be something like this:
 ####Cloning an already exisiting repository in your local environment
 
 There are two situations when you need to clone an exisiting repository to your local environment:
+
 1. When you start working on a project that is already under development.
 2. When you want to modify just a small thing and you don't need to pull the repo into an existing WordPress install.
 
