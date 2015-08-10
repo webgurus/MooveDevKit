@@ -139,6 +139,7 @@ After a couple of commits when you want to push to your remote repository, you w
 ####Commit
 
 There are a couple of guidelines on how and why to commit:
+
 1. You should commit every 30 minutes, even if you haven't finished your feature.
 2. You should commit when you finished a feature
 3. When adding a commit message, you should be really descriptive but in the same time you have to be short, so you will definitely know what commit was related to what exactly.
