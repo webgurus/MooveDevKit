@@ -35,6 +35,7 @@ _wpeprivate
 wp-content/object-cache.php
 wp-content/mu-plugins/mu-plugin.php
 wp-content/mu-plugins/slt-force-strong-passwords.php
+wp-content/mu-plugins/php-selector.php
 wp-content/mu-plugins/limit-login-attempts
 wp-content/mu-plugins/wpengine-common
 wp-content/mu-plugins/php-selector
