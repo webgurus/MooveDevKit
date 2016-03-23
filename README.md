@@ -1,5 +1,5 @@
 
-# Moove Development Kit
+# Moove Agency's Development Kit
 
 * Based on Sage: [https://github.com/roots/sage](https://github.com/roots/sage)
 * Using WPEngine Mercury on Vagrant [http://wpengine.com/mercury/how-to-start/](http://wpengine.com/mercury/how-to-start/)
