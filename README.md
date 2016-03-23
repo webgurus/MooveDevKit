@@ -212,7 +212,7 @@ After you've installed Gulp and ran `npm install` from the them folder, use `gul
 * Bootstrap
 * Gulp build script
 
-## Suggestions by Automattic ##
+## Best Practice WordPress Development Guidelines ##
 
 Please check, and follow the WordPress PHP Coding Standards.
 
