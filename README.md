@@ -211,3 +211,66 @@ After you've installed Gulp and ran `npm install` from the them folder, use `gul
 * HTML5 Boilerplate's markup
 * Bootstrap
 * Gulp build script
+
+## Suggestions by Automattic ##
+
+Please check, and follow the WordPress PHP Coding Standards.
+
+[Read more about the WordPress PHP Coding Standards here ](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php)
+
+
+#### Prefix all the things! ###
+
+All files, variables, and functions should be prefixed with a unique identifier. Prefixes prevent other plugins from overwriting your variable values or accidentally calling your functions. It will also prevent you from doing the same. Adding the initials of your plugin name or your name is a good start.
+
+
+[Read more about the prefixes here](https://developer.wordpress.org/plugins/the-basics/best-practices/#prefix-everything)
+
+#### Naming conventions! ###
+
+Use lowercase letters in variable, action, and function names `(never camelCase)`. Separate words via underscores. Don’t abbreviate variable names un-necessarily; let the code be unambiguous and self-documenting.
+
+* Class names should use capitalized words separated by underscores. Any acronyms should be all upper case.
+* Constants should be in all upper-case with underscores separating words
+* Files should be named descriptively using lowercase letters. Hyphens should separate words.
+* Class file names should be based on the class name with class- prepended and the underscores in the class name replaced with hyphens
+
+#### Brace Style ###
+ 
+ * Braces shall be used for all blocks 
+ * Braces should always be used, even when they are not required
+ * Consistency in using braces!
+
+ Useful tools, which makes developers and teams life easier:
+
+ * [https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
+ * [https://github.com/Automattic/PhpStorm-Resources](https://github.com/Automattic/PhpStorm-Resources)
+
+#### Please sanitize, escape, and validate your POST calls ###
+
+When you include POST/GET/REQUEST calls in your plugin, it's important to sanitize, validate, and escape them. The goal here is to prevent a user from accidentally sending trash data through the system, as well as protecting them from potential security issues. 
+ 
+* SANITIZE: All instances where generated content is inserted into the database, or into a file, or being otherwise processed by WordPress, the data MUST be properly sanitized for security. By sanitizing your POST data when used to make action calls or URL redirects, you will lessen the possibility of XSS vulnerabilities. You should never have a raw data inserted into the database, even by a update function, and even with a prepare() call. 
+ 
+* VALIDATE: In addition to sanitization, you should validate all your calls. If a $_POST call should only be a number, ensure it's an int() before you pass it through anything. Even if you're sanitizing or using WordPress functions to ensure things are safe, we ask you please validate for sanity's sake. Any time you are adding data to the database, it should be the right data. 
+ 
+* ESCAPE: Similarly, when you're outputting data, make sure to escape it properly, so it can't hijack admin screens. There are many esc_*() functions you can use to make sure you don't show people the wrong data. 
+ 
+In all cases, using stripslashes or strip_tags is not enough. You need to use the most appropriate method associated with the type of content you're processing. Check that a URL is a URL and don't just be lazy and use sanitize_text please. The ultimate goal is that you should ensure that invalid and unsafe data is NEVER processed or displayed. Clean everything, check everything, escape everything, and never trust the users to always have input sane data. 
+ 
+Please review [this document](http://codex.wordpress.org/Validating_Sanitizing_and_Escaping_User_Data)!
+
+#### Allowing Direct File Access to plugin files ###
+
+Direct file access is when someone directly queries your file. This can be done by simply entering the complete path to the file in the URL bar of the browser but can also be done by doing a POST request directly to the file. For files that only contain a PHP class the risk of something funky happening when directly accessed is pretty small. For files that contain procedural code, functions and function calls, the chance of security risks is a lot bigger.
+ 
+You can avoid this by putting this code at the top of all php files:
+ 
+`if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly`
+
+EOF.
+
+
+
+
+
