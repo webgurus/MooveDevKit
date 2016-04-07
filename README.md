@@ -268,6 +268,11 @@ You can avoid this by putting this code at the top of all php files:
  
 `if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly`
 
+
+#### Integrating external APIs ###
+
+If you’re implementing an API, make sure you implement a safe-check so that if API is unavailable for any reason, it will not crash your site.
+
 EOF.
 
 
