@@ -273,6 +273,12 @@ You can avoid this by putting this code at the top of all php files:
 
 If you’re implementing an API, make sure you implement a safe-check so that if API is unavailable for any reason, it will not crash your site.
 
+Use PHP Exceptions to prevent any site crash. 
+Read more about PHP try-catch method here: http://php.net/manual/ro/language.exceptions.php
+You can store the data to an option field when the API returns success and if the API doesn't respond or any error returned use the backup data from the options page. 
+For Twitter you can use this integration kit: 
+https://github.com/MooveAgency/Twitter-Integration-API
+
 EOF.
 
 
