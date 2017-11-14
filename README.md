@@ -91,7 +91,7 @@ Then you should do the following modifications:
 
 To work on a new project you must set up a new repository for it on GitHub and use Git on a regular basis. This is a **must** in our development process because otherwise this whole process is worthless.
 
-To set up a new GitHub repository, you need to be added to the MooveAgency organisation. If you are still not part of this organisation on GitHub, please e-mail [Lukas](mailto:lukas@mooveagency.com), [Marton](marton@mooveagency.com) or [Ilona](mailto:ilona@mooveagency.com) with your GitHub username and e-mail address.
+To set up a new GitHub repository, you need to be added to the MooveAgency organisation. If you are still not part of this organisation on GitHub, please e-mail [Lukas](mailto:lukas@mooveagency.com) or [Ilona](mailto:ilona@mooveagency.com) with your GitHub username and e-mail address.
 
 You need to create a Repository under the the MooveAgency Organisation page [https://github.com/MooveAgency](https://github.com/MooveAgency) by clicking the New Repository button.
 
