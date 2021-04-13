@@ -91,9 +91,9 @@ Then you should do the following modifications:
 
 To work on a new project you must set up a new repository for it on GitHub and use Git on a regular basis. This is a **must** in our development process because otherwise this whole process is worthless.
 
-To set up a new GitHub repository, you need to be added to the MooveAgency organisation. If you are still not part of this organisation on GitHub, please e-mail [Lukas](mailto:lukas@mooveagency.com) or [Ilona](mailto:ilona@mooveagency.com) with your GitHub username and e-mail address.
+To set up a new GitHub repository, you need to be added to the WebGurus organisation. If you are still not part of this organisation on GitHub, please e-mail [Marton Gergely](mailto:guru@webgurus.biz) or [Marton Aaron](mailto:aaron@webgurus.biz) with your GitHub username and e-mail address.
 
-You need to create a Repository under the the MooveAgency Organisation page [https://github.com/MooveAgency](https://github.com/MooveAgency) by clicking the New Repository button.
+You need to create a Repository under the the WebGurus Organisation page [https://github.com/webgurus](https://github.com/webgurus) by clicking the New Repository button.
 
 The Repository should be named after your project, e.g. "ukibc-theme". Once you've create the repository you will need to add the repository as the remote to your project. To achieve that you will have to do the following:
 
@@ -107,7 +107,7 @@ The commands for the above listed steps should be these:
 
 then add your remote
 
-`git remote add origin https://github.com/MooveAgency/ukibc-theme.git`
+`git remote add origin https://github.com/webgurus/ukibc-theme.git`
 
 then you have to add all your files to create the initial commit like this:
 
