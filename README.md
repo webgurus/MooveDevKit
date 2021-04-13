@@ -1,13 +1,13 @@
 
-# Moove Agency's Development Kit
+# WebGurus Development Kit
 
 * Based on Sage: [https://github.com/roots/sage](https://github.com/roots/sage)
 * Using WPEngine Mercury on Vagrant [http://wpengine.com/mercury/how-to-start/](http://wpengine.com/mercury/how-to-start/)
 * Using GitHub and CodeShip for deployment [http://codeship.com](http://codeship.com)
-* Home Page: [http://mooveagency.com/](http://mooveagency.com/)
+* Home Page: [https://webgurus.biz/](https://webgurus.biz/)
 
 ## Prerequisites ##
-In order to use MDK effectively, you'll need to have a few tools installed on your computer. You should:
+In order to use WGDK effectively, you'll need to have a few tools installed on your computer. You should:
 
 1. Install [Git](http://git-scm.org).
  * Windows users: Be sure to add the Git executables to your path (See, e.g. [this guide](https://eamann.com/tech/vagrant-windows/), under "Prerequisites")
@@ -21,9 +21,9 @@ In order to use MDK effectively, you'll need to have a few tools installed on yo
 Now, let’s go ahead and check out the tools we have installed. To start with Git, type `git --version` in the command line. For Vagrant, type `vagrant -v`, and then for VirtualBox, use command `vBoxManage -v`.
 
 ## WPEngine Mercury Installation ##
-1. Create a directory where your Vagrant and your sites will be stored. e.g. 'moovevagrant'.
-1. `git clone --recursive https://github.com/wpengine/hgv.git moovevagrant` to clone the latest version of WPE Mercury in the 'moovevagrant' directory.
-2. Change into the directory:  `cd moovevagrant`.
+1. Create a directory where your Vagrant and your sites will be stored. e.g. 'wbgvagrant'.
+1. `git clone --recursive https://github.com/wpengine/hgv.git wbgvagrant` to clone the latest version of WPE Mercury in the 'wbgvagrant' directory.
+2. Change into the directory:  `cd wbgvagrant`.
 3. Run `vagrant up`.
 4. Access `http://hvg.dev/` to read more about what tools and URLs you can work with.
 
@@ -56,7 +56,7 @@ To allow Vagrant to install the new domain and provision the server accordingly,
 
 Your site is up and running locally, so here's how you can access everything you need:
 
-* You can access the WordPress files of the new site in your `/moovevagrant/hgv_data/sites/<DEV_SITE_NAME>/` directory.
+* You can access the WordPress files of the new site in your `/wbgvagrant/hgv_data/sites/<DEV_SITE_NAME>/` directory.
 * In the above directory you will find a file called `local-config.php`. This file contains the connection information for the development site's database. It usually is generated like this (where 'ukibc' changes to the actual dev site you will be setting up):
 ```
 /** The name of the database for WordPress */
@@ -79,7 +79,7 @@ Because Mercury has automatically set up the default domain hgv.dev, it installs
 Please refer to the Getting Started section of the HGV install by accessing: [http://hgv.dev/#mercury-vagrant-hgv-admin-tools](http://hgv.dev/#mercury-vagrant-hgv-admin-tools) to read about debugging and admin tools.
 
 ## HTML development
-Start by [downloading MooveDevKit](https://github.com/MooveAgency/MooveDevKit/zipball/master) and then unzip and copy the contents of the downloaded archive to the directory where your WordPress files reside and merge/replace when asked. Following the above instructions the directory where you need to paste your files would be `/moovevagrant/hgv_data/sites/ukibc/`.
+Start by [downloading WBGDevKit](https://github.com/webgurus/MooveDevKit/zipball/master) and then unzip and copy the contents of the downloaded archive to the directory where your WordPress files reside and merge/replace when asked. Following the above instructions the directory where you need to paste your files would be `/moovevagrant/hgv_data/sites/ukibc/`.
 
 Then you should do the following modifications:
 
